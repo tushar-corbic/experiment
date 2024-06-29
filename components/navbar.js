@@ -23,26 +23,30 @@ export default function Navbar(props) {
     {
       label: "Contact",
       href: "/contact"
+    },
+    {
+      label: "Blog",
+      href: "/archive"
     }
   ];
 
-  // const rightmenu = [
-  //   {
-  //     label: "Archive",
-  //     href: "/archive"
-  //   },
-  //   {
-  //     label: "Pro Version",
-  //     href: "https://stablo-pro.web3templates.com/",
-  //     external: true,
-  //     badge: "new"
-  //   },
-  //   {
-  //     label: "Download",
-  //     href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-  //     external: true
-  //   }
-  // ];
+  const leftmenu = [
+    {
+      label: "",
+      href: "/archive"
+    },
+    {
+      label: "",
+      href: "https://stablo-pro.web3templates.com/",
+      external: true,
+      badge: "new"
+    },
+    {
+      label: "",
+      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      external: true
+    }
+  ];
 
   const mobilemenu = [...rightmenu];
 
@@ -53,7 +57,7 @@ export default function Navbar(props) {
           {({ open }) => (
             <>
               <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
-                {/* <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
+                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -74,7 +78,7 @@ export default function Navbar(props) {
                       )}
                     </Fragment>
                   ))}
-                </div> */}
+                </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-28 dark:hidden">
                     {props.logo ? (
@@ -86,7 +90,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        CozyKlan
                       </span>
                     )}
                   </Link>
