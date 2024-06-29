@@ -13,7 +13,7 @@ export default function About({ authors, settings }) {
         <p className="text-lg">We are a small passionate team.</p>
       </div>
 
-      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
+      {/* <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
@@ -34,7 +34,7 @@ export default function About({ authors, settings }) {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
