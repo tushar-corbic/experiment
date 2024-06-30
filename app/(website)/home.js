@@ -4,20 +4,21 @@ import "../../styles/css/templatemo-chain-app-dev.css"
 import "../../styles/css/animated.css"
 import "../../styles/css/owl.css"
 import Container from "@/components/container";
+import HomeContainer from "@/components/homeContainer";
 import PostList from "@/components/postlist";
 
 export default function Post({ posts }) {
   return (
     <>
       {posts && (
-        <Container>
+        <HomeContainer>
 
           
-          <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 ">
+          {/* <div className="mt-10 grid gap-10 md:grid-cols-2 lg:gap-10 xl:grid-cols-3 ">
             {posts.slice(2, 14).map(post => (
               <PostList key={post._id} post={post} aspect="square" />
             ))}
-          </div>
+          </div> */}
           <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
             <div class="container">
               <div class="row">
@@ -55,7 +56,7 @@ export default function Post({ posts }) {
               <span>View all Posts</span>
             </Link>
           </div> */}
-        </Container>
+        </HomeContainer>
       )}
     </>
   );
