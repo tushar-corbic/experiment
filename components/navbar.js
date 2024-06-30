@@ -17,17 +17,18 @@ export default function Navbar(props) {
       href: "/"
     },
     {
-      label: "About",
+      label: "Team",
       href: "/about"
-    },
-    {
-      label: "Contact",
-      href: "/contact"
     },
     {
       label: "Blog",
       href: "/archive"
+    },
+    {
+      label: "Contact",
+      href: "/contact"
     }
+    
   ];
 
   const leftmenu = [
