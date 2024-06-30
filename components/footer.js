@@ -29,17 +29,17 @@ export default function Footer(props) {
         <span>&middot;</span>
         <span>
           {" "}
-          <a
+          {/* <a
             href="https://github.com/web3templates/stablo"
             rel="noopener"
             target="_blank">
             Github
-          </a>
+          </a> */}
         </span>
       </div>
       <div className="mt-2 flex items-center justify-between">
         <div className="mt-5">
-          <a
+          {/* <a
             href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
             target="_blank"
             rel="noopener"
@@ -51,7 +51,7 @@ export default function Footer(props) {
               width="150"
               height="25"
             />
-          </a>
+          </a> */}
         </div>
         <ThemeSwitch />
       </div>
