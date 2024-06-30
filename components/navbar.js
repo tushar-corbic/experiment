@@ -90,7 +90,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center" style={{fontSize:"30px"}}>
-                        CozyKlan
+                        Kozyclan
                       </span>
                     )}
                   </Link>
