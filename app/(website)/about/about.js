@@ -14,7 +14,7 @@ export default function About({ authors, settings }) {
       <div className="text-center">
         <p className="text-lg">We are a small passionate team.</p>
       </div>
-      <div class="row">
+      {/* <div class="row">
         <div class="column">
           <div class="card">
             <Image
@@ -90,7 +90,7 @@ export default function About({ authors, settings }) {
             height={100}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
         {authors.slice(0, 3).map(author => {
