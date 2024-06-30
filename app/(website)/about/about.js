@@ -13,14 +13,14 @@ export default function About({ authors, settings }) {
         <p className="text-lg">We are a small passionate team.</p>
       </div>
 
-      {/* <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
+      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image) || null;
           return (
             <div
               key={author._id}
               className="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
-              <Link href={`/author/${author?.slug}`}>
+              {/* <Link href={`/author/${author?.slug}`}> */}
                 {imageProps && (
                   <Image
                     src={imageProps?.src}
@@ -30,11 +30,11 @@ export default function About({ authors, settings }) {
                     className="object-cover"
                   />
                 )}
-              </Link>
+              {/* </Link> */}
             </div>
           );
         })}
-      </div> */}
+      </div>
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
