@@ -12,14 +12,14 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "CozyKlan",
-      template: "%s | CozyKlan"
+        "Kozyclan",
+      template: "%s | Kozyclan"
     },
     description:
       settings?.description ||
-      "CozyKlan",
+      "Kozyclan",
     keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "CozyKlan" }],
+    authors: [{ name: "Kozyclan" }],
     canonical: settings?.url,
     openGraph: {
       images: [
