@@ -1,16 +1,95 @@
 import Container from "@/components/container";
+import HomeContainer from "@/components/homeContainer";
 import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
+import "../../../styles/css/image.css"
 
 export default function About({ authors, settings }) {
   return (
-    <Container>
+    <HomeContainer>
       <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-        About
+        Team
       </h1>
       <div className="text-center">
         <p className="text-lg">We are a small passionate team.</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <Image
+              src="/img/client-image.jpg"
+              alt="Jane"
+              sizes="(max-width: 320px) 100vw, 320px"
+
+              // style="width:100%"
+              width={400}
+              height={400}
+            />
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <Image
+              src="/img/client-image.jpg"
+              alt="Jane"
+              sizes="(max-width: 320px) 100vw, 320px"
+
+              // style="width:100%"
+              width={400}
+              height={400}
+            />
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <Image
+              src="/img/client-image.jpg"
+              alt="Jane"
+              sizes="(max-width: 320px) 100vw, 320px"
+
+              // style="width:100%"
+              width={400}
+              height={400}
+            />
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
+        <div className="relative aspect-square overflow-hidden rounded-md bg-slate-50 odd:translate-y-10 odd:md:translate-y-16">
+          <Image
+            src="/img/client-image.jpg"
+            alt="Jane"
+            sizes="(max-width: 320px) 100vw, 320px"
+
+            style={{width:"100%"}}
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
 
       <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
@@ -35,31 +114,6 @@ export default function About({ authors, settings }) {
           );
         })}
       </div>
-
-      <div className="prose mx-auto mt-14 text-center dark:prose-invert">
-        <p>
-          At Kozyclan, we believe that every gathering is an opportunity for unforgettable fun and connection. Our mission is to transform any party, event, or casual get-together into a memorable experience with our unique, engaging social games. Whether you’re hosting a cozy family dinner, a lively birthday bash, or a corporate team-building event, Kozyclan has the perfect game to elevate the atmosphere and bring people closer together.
-        </p>
-        <p>
-          <h3>Why Choose Kozyclan?</h3>
-          <h4>Innovative Game Design</h4>
-          <p>Our creative team of game designers crafts original games that are easy to learn, inclusive, and endlessly entertaining. We focus on fostering laughter, teamwork, and meaningful interactions.
-          </p>
-          <h4>Versatile Options</h4>
-          From icebreakers to strategy games and hilarious party activities, our diverse game collection caters to all ages and preferences. No matter the occasion, you’ll find a game that fits your theme and audience.
-
-          <h4>User-Friendly Experience</h4>
-          <p>Our games come with clear instructions and minimal setup, so you can spend more time enjoying the moment and less time figuring out the rules.
-          </p>
-
-          <h4>Community and Connection</h4>
-          <p>At the heart of Kozyclan is our commitment to building connections. We design our games to break down social barriers, spark conversations, and create lasting memories. With Kozyclan, you’re not just playing a game; you’re sharing an experience.
-          </p>
-        </p>
-        <p>
-          <Link href="/contact">Get in touch</Link>
-        </p>
-      </div>
-    </Container>
+    </HomeContainer>
   );
 }

@@ -911,6 +911,18 @@ Banner Style
   height: 100%;
   z-index: 1;
 }
+.about-banner:after {
+  content: '';
+  background-image: url(../../public/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
 .main-banner .left-content {
   margin-right: 15px;
@@ -1573,7 +1585,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../../public/img/footer-bg.png);
+  background-image: url(../../public/img/regular-table-top.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
