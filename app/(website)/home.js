@@ -28,8 +28,8 @@ export default function Post({ posts }) {
                       <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="row">
                           <div class="col-lg-12" style={{float:"left", width:"50%"}}>
-                            <h2>Get The Latest App From App Stores</h2>
-                            <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
+                            <h2>Coming soon: A platform that lights up social gatherings !</h2>
+                            <p>A collection of games and prompts for ice breaking and fun sessions among couples, a group of friends, office colleagues, strangers or acquaintances, or any party.</p>
                           </div>
                         </div>
                       </div>
