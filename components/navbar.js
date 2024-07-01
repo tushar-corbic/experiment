@@ -17,10 +17,6 @@ export default function Navbar(props) {
       href: "/"
     },
     {
-      label: "Team",
-      href: "/about"
-    },
-    {
       label: "Blog",
       href: "/archive"
     },
@@ -80,7 +76,7 @@ export default function Navbar(props) {
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
+                <div className="flex w-full items-center justify-between md:w-auto" style={{marginRight:"200px"}}>
                   <Link href="/" className="w-28 dark:hidden">
                     {props.logo ? (
                       <Image
@@ -90,7 +86,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center" style={{fontSize:"30px"}}>
+                      <span className="block text-center border" style={{fontSize:"50px"}}>
                         Kozyclan
                       </span>
                     )}
