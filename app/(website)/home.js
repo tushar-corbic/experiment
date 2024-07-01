@@ -50,15 +50,33 @@ export default function Post({ posts }) {
               </div>
             </div>
           </div>
+
         </div>
       </HomeContainer>
       <HomeContainer>
-        <footer class="footer" >
-          <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-            About
-          </h1>
-          <div>
-            {/* <div className="prose mx-auto mt-14 text-center dark:prose-invert"> */}
+        {/* <footer>
+          <div style={{borderWidth:"3px", borderColor:"red"}}>
+            <h3>Why Choose Kozyclan?</h3>
+            <div style={{ borderWidth: "20px", borderColor: "black", height:"1000px" }}>
+              <div style={{ float: "left" }}>
+                <h4>Innovative Game Design</h4>
+                <p>
+                  Our creative team of game designers crafts original games that are easy to learn, inclusive, and endlessly entertaining. We focus on fostering laughter, teamwork, and meaningful interactions.
+                </p>
+              </div>
+              <div style={{ float: "right" }}>
+                <h4>Versatile Options</h4>
+                From icebreakers to strategy games and hilarious party activities, our diverse game collection caters to all ages and preferences. No matter the occasion, you’ll find a game that fits your theme and audience.
+
+              </div>
+            </div>
+          </div>
+        </footer> */}
+        <footer class="footer" style={{ borderWidth: "30px", borderColor: "red" }}>
+        <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
+          About
+        </h1>
+        <div className="prose mx-auto mt-14 text-center dark:prose-invert">
             <p>
               At Kozyclan, we believe that every gathering is an opportunity for unforgettable fun and connection. Our mission is to transform any party, event, or casual get-together into a memorable experience with our unique, engaging social games. Whether you’re hosting a cozy family dinner, a lively birthday bash, or a corporate team-building event, Kozyclan has the perfect game to elevate the atmosphere and bring people closer together.
             </p>
@@ -76,7 +94,7 @@ export default function Post({ posts }) {
 
               </div>
             </div>
-            {/* <div>
+            <div>
               <div>
                 <h4>User-Friendly Experience</h4>
                 <p>Our games come with clear instructions and minimal setup, so you can spend more time enjoying the moment and less time figuring out the rules.
@@ -88,12 +106,17 @@ export default function Post({ posts }) {
                 <p>At the heart of Kozyclan is our commitment to building connections. We design our games to break down social barriers, spark conversations, and create lasting memories. With Kozyclan, you’re not just playing a game; you’re sharing an experience.
                 </p>
               </div>
-            </div> */}
-            {/* <p>
-              <Link href="/contact">Get in touch</Link>
-            </p> */}
+            </div>
+            <div class="left-content show-up header-text wow fadeInLeft">
+
+              <div class="white-button scroll-to-section">
+                <a href="/contact">Get in touch <i class="fab fa-google-play"></i></a>
+              </div>
+            </div>
           </div>
+
         </footer>
+
       </HomeContainer>
     </>
   );
