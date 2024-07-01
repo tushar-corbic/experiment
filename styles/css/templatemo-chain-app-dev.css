@@ -223,8 +223,8 @@ body {
 }
 
 .white-button a:hover {
-  background-color: #4b8ef1;
-  color: #fff !important;
+  background-color: white !important;
+  color: #4b8ef1!important;
 }
 
 .text-button a {
